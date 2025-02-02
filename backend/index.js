@@ -6,9 +6,9 @@ import mongoose from "mongoose";
 import Demo from "./Models/demo.js"; // Ensure correct path and extension
 
 const app = express();
-
+const backend_url=process.env.BACKEND_URL;
 const corsOptions = {
-    origin: ['http://localhost:5173', 'http://13.201.89.179:5173', 'http://13.201.89.179'],
+    origin: ['http://localhost:5173',backend_url],
     optionsSuccessStatus: 200
 };
 
