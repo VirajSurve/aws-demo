@@ -8,8 +8,7 @@ import Demo from "./Models/demo.js"; // Ensure correct path and extension
 const app = express();
 const backend_url=process.env.BACKEND_URL;
 const corsOptions = {
-    origin: ['http://localhost:5173',backend_url],
-    optionsSuccessStatus: 200
+    origin: ['http://localhost:5173',backend_url]
 };
 
 app.use(cors(corsOptions));
